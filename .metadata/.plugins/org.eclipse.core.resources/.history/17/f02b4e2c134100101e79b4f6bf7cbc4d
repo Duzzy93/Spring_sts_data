@@ -1,0 +1,16 @@
+package com.company.repository;
+
+import org.springframework.stereotype.Repository;
+
+import com.company.dto.MemberDTO;
+
+import lombok.RequiredArgsConstructor;
+
+@Repository
+@RequiredArgsConstructor
+public class MemberRepository {
+
+
+}
+	
+

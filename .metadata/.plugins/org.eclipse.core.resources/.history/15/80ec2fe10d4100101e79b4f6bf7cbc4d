@@ -1,0 +1,32 @@
+package com.company.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.company.service.MemberService;
+
+import lombok.RequiredArgsConstructor;
+
+@Controller
+@RequestMapping("/member")
+@RequiredArgsConstructor
+public class MemberController {
+	@GetMapping("/save")
+	public String saveForm() {
+		return "save";
+	}
+	
+	@PostMapping("/save")
+	public String save(@ModelAttribute MemberVO memberVO) {
+		int saveResult = MemberService.save(memberVO);
+		if(saveResult > 0) {
+			return "login";
+		}else {
+			return "save";
+		}
+		
+	}
+}
