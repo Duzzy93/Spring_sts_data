@@ -14,10 +14,10 @@
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
     <fullyQualifiedTypeName name="com.company.vo.MemberVO"/>
+    <fullyQualifiedTypeName name="com.company.dto.MemberDTO"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+    <fullyQualifiedTypeName name="com.company.repository.MemberRepository"/>
     <fullyQualifiedTypeName name="lombok.RequiredArgsConstructor"/>
     <fullyQualifiedTypeName name="com.company.service.MemberService"/>
-    <fullyQualifiedTypeName name="com.company.dto.MemberDTO"/>
-    <fullyQualifiedTypeName name="com.company.repository.MemberRepository"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
 </qualifiedTypeNameHistroy>
